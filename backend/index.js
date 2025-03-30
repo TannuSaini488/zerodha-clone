@@ -214,6 +214,10 @@ app.use(
   })
 );
 
+app.get('/', (req,res) => {
+  res.send("hello");
+})
+
 app.get("/allPositions", async (req, res) => {
   let allPositions = await PositionsModel.find({});
   res.json(allPositions);
