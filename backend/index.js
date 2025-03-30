@@ -200,6 +200,7 @@ app.use("/", authRoute);
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
   res.json(allHoldings);
+  res.send("all holdings");
 });
 
 app.use(
