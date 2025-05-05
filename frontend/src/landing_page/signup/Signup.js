@@ -17,11 +17,7 @@ function Signup() {
     event.preventDefault();
 
     axios
-      .post(
-        `${process.env.REACT_APP_BACKEND_URL}/signup`,
-        { credentials: "include" },
-        { email, username, password }
-      )
+      .post(`${process.env.REACT_APP_BACKEND_URL}/signUp`, { email, username, password })
       .then((res) => {
         //checks the status code. if 201, user is new and brings user in dashboard
         if (res.status === 201) {
@@ -39,7 +35,6 @@ function Signup() {
     setPassword("");
     setUsername("");
   };
-
   return (
     <div className="form_container" data-testid="signup-container">
       <h2 className="text-center">Sign Up</h2>
