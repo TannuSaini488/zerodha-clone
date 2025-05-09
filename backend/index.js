@@ -205,9 +205,7 @@ app.get("/allHoldings", async (req, res) => {
 app.use(
   cors({
     origin: [
-      "http://localhost:3002",
-      "https://zerodha-clone-tryb.vercel.app",
-      "https://zerodha-clone-v9rc.vercel.app",
+      "http://localhost:3002"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
