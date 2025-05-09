@@ -205,7 +205,9 @@ app.get("/allHoldings", async (req, res) => {
 app.use(
   cors({
     origin: [
-      "http://localhost:3002"
+      "http://localhost:3002",
+      "https://zerodha-clone-frontend-tre9.onrender.com",
+      "https://zerodha-clone-dashboard-s8dd.onrender.com"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
