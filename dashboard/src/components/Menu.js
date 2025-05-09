@@ -18,7 +18,7 @@ const Menu = () => {
   const handleLogout = ()=>{
     localStorage.removeItem('token'); 
     setTimeout(()=>{
-          window.location.href = `${process.env.REACT_APP_FRONTEND_URL}/logIn`; 
+          window.location.href = `${process.env.REACT_APP_FRONTEND_URL}/login`; 
           window.history.pushState(null, "", window.location.href);
     }, 500);
   }
