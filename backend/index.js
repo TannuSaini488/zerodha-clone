@@ -202,18 +202,20 @@ app.get("/allHoldings", async (req, res) => {
   res.json(allHoldings);
 });
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3002",
-      "https://zerodha-clone-backend-lfer.onrender.com",
-      "https://zerodha-clone-frontend-tre9.onrender.com",
-      "https://zerodha-clone-dashboard-s8dd.onrender.com"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:3002",
+//       "https://zerodha-clone-backend-lfer.onrender.com",
+//       "https://zerodha-clone-frontend-tre9.onrender.com",
+//       "https://zerodha-clone-dashboard-s8dd.onrender.com"
+//     ],
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true,
+//   })
+// );
+
+app.use(cors());
 
 app.get('/', (req,res) => {
   res.send("hello");
