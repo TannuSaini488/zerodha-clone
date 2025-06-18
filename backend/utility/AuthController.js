@@ -54,3 +54,9 @@ module.exports.LogIn = async (req, res, next) => {
     console.error(error);
   }
 };
+
+
+module.exports.LogOut = async (req, res) => {
+  res.clearCookie("token", { path: '/' }); // token name depends on your code
+  res.status(200).json({ message: "Logged out successfully" });
+};

@@ -202,20 +202,16 @@ app.get("/allHoldings", async (req, res) => {
   res.json(allHoldings);
 });
 
-// app.use(
-//   cors({
-//     origin: [
-//       "http://localhost:3002",
-//       "https://zerodha-clone-backend-lfer.onrender.com",
-//       "https://zerodha-clone-frontend-tre9.onrender.com",
-//       "https://zerodha-clone-dashboard-s8dd.onrender.com"
-//     ],
-//     methods: ["GET", "POST", "PUT", "DELETE"],
-//     credentials: true,
-//   })
-// );
-
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://zerodha-clone-frontend-tre9.onrender.com",
+      "https://zerodha-clone-dashboard-s8dd.onrender.com"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.get('/', (req,res) => {
   res.send("hello");
@@ -244,6 +240,5 @@ app.get("/allOrders", async (req, res) => {
 
 app.listen(PORT, () => {
   console.log("App Started!");
-  mongoose.connect(uri);
   console.log("DB connected!");
 });
