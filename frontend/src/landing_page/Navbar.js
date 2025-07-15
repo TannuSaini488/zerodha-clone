@@ -16,7 +16,7 @@ function Navbar() {
             <ul className="navbar-nav mb-lg-0">
               <li className="nav-item">
                {/* <a className="nav-link active" aria-current="page" href="https://zerodha-clone-dashboard.vercel.app/register"> */}
-               <a className="nav-link active" aria-current="page" href="http://localhost:3001/register">
+               <a className="nav-link active" aria-current="page" href="https://zerodha-clone-dashboard-cvhc.onrender.com/register">
                   Register
                 </a>
               </li>
