@@ -49,20 +49,14 @@ module.exports.login = async (req, res) => {
 
     const token = jwt.sign({ email: user.email }, process.env.secret);
 
-    if (token) {
-      if (token) {
-        localStorage.setItem("token", token);
-      } else {
-        console.error("No token received in login()");
-      }
-    }
-
     res.status(200).json({
       success: true,
       token,
       user,
     });
   } catch (error) {
+    console.error("Login error:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 };
+
