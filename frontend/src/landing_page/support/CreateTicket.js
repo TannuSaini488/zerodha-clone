@@ -1,171 +1,231 @@
 import React from "react";
-import "./CreateTicket";
 
 function CreateTicket() {
   return (
     <div className="container">
-      <div className="row p-5 mb-5">
-        <h1 className="fs-3 m-2 text-muted">
-          To create a ticket, select a relevant topic
-        </h1>
-        <div className="col-4 p-4 mt-4 mb-4">
-          <p className="fs-5">
+      <div className="row p-5 mt-5 mb-5">
+        <h1 className="fs-2">To create a ticket, select a relevant topic</h1>
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4 className="">
             <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
-          </p>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Resident individual
+          </h4>
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Online Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Minor
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Offline Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Non Resident Indian (NRI)
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Company, Partnership and HUF Account
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Company, Partnership, HUF and LLP
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Glossary
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            NRI Account Opening
           </a>
-          <br></br>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Charges at Zerodha
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Zerodha IDFC FIRST Bank 3-in-1 Account
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Getting Started
+          </a>
+          <br />
         </div>
-        <div className="col-4 p-4 mt-4 mb-4">
-          <p className="fs-5">
-            <i class="fa fa-user-o" aria-hidden="true"></i> Your Zerodha Account
-          </p>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Your Profile
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4 className="">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
+          </h4>
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Online Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Account modification
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Offline Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Client Master Report(CMR)
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Company, Partnership and HUF Account
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Depository Participant(DP)
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Nomination
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            NRI Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Transfer and conversion of securities
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Charges at Zerodha
           </a>
-          <br></br>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Zerodha IDFC FIRST Bank 3-in-1 Account
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Getting Started
+          </a>
+          <br />
         </div>
-        <div className="col-4 p-4 mt-4 mb-4">
-          <p className="fs-5">
-            <i class="fa fa-bar-chart" aria-hidden="true"></i> Kite
-          </p>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            IPO
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4 className="">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
+          </h4>
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Online Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Trading FAQs
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Offline Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Margin Trading Facility (MTF) and Margins
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Company, Partnership and HUF Account
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Charts and orders
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Alerts and Nudges
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            NRI Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            General
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Charges at Zerodha
           </a>
-          <br></br>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Zerodha IDFC FIRST Bank 3-in-1 Account
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Getting Started
+          </a>
+          <br />
         </div>
-        <div className="col-4 p-4 mb-4">
-          <p className="fs-5">
-            <i class="fa fa-window-maximize" aria-hidden="true"></i> Funds
-          </p>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Add money
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4 className="">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
+          </h4>
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Online Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Withdraw money
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Offline Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Add bank accounts
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Company, Partnership and HUF Account
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            eMandates
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Opening
           </a>
-          <br></br>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            NRI Account Opening
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Charges at Zerodha
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Zerodha IDFC FIRST Bank 3-in-1 Account
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Getting Started
+          </a>
+          <br />
         </div>
-        <div className="col-4 p-4 mb-4">
-          <p className="fs-5">
-            {" "}
-            <i class="fa fa-contao" aria-hidden="true"></i> Console
-          </p>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Portfolio
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4 className="">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
+          </h4>
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Online Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Corporate actions
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Offline Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Funds statement
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Company, Partnership and HUF Account
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Reports
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Profile
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            NRI Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Segments
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Charges at Zerodha
           </a>
-          <br></br>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Zerodha IDFC FIRST Bank 3-in-1 Account
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Getting Started
+          </a>
+          <br />
         </div>
-        <div className="col-4 p-4 mb-4">
-          <p className="fs-5">
-            <i class="fa fa-circle-thin" aria-hidden="true"></i> Coin
-          </p>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Understanding mutual funds and Coin
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4 className="">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
+          </h4>
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Online Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Coin app
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Offline Account Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Coin web
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Company, Partnership and HUF Account
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            Transactions and reports
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Opening
           </a>
-          <br></br>
-          <a className="lh-lg text-decoration-none m-4" href="">
-            National Pension Scheme (NPS)
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            NRI Account Opening
           </a>
-          <br></br>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Charges at Zerodha
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Zerodha IDFC FIRST Bank 3-in-1 Account
+          </a>
+          <br />
+          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
+            Getting Started
+          </a>
+          <br />
         </div>
       </div>
     </div>
