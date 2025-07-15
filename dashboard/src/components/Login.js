@@ -37,7 +37,7 @@ export default function Login() {
     };
     axios
       // .post("https://zerodha-clone-backend-8nlf.onrender.com/user/login", data, {
-      .post("http://localhost:3000/user/login", data, {
+      .post("https://zerodha-clone-backend-itcc.onrender.com/user/login", data, {
         headers: {
           "Content-Type": "application/json",
         }

@@ -12,7 +12,7 @@ const Orders = () => {
   useEffect(() => {
     axios
       // .get("https://zerodha-clone-backend-8nlf.onrender.com/orders/index", {
-      .get("http://localhost:3000/orders/index", {
+      .get("https://zerodha-clone-backend-itcc.onrender.com/orders/index", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
