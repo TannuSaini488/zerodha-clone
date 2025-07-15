@@ -13,7 +13,9 @@ const positionsRoute = require("./routes/positionsRoute");
 const userRoute = require("./routes/userRoute");
 const orderRoute = require("./routes/orderRoute");
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://zerodha-clone-dashboard-cvhc.onrender.com'
+}));
 app.use(bodyParser.json());
 
 app.use("/holdings", holdingsRoute);
