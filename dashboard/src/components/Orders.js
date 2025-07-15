@@ -14,7 +14,7 @@ const Orders = () => {
       // .get("https://zerodha-clone-backend-8nlf.onrender.com/orders/index", {
       .get("https://zerodha-clone-backend-itcc.onrender.com/orders/index", {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`
         },
       })
       .then((res) => {

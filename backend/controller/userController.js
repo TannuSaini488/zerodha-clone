@@ -25,7 +25,7 @@ module.exports.register = async (req, res) => {
     res.status(200).json({
       success: true,
       token,
-      user
+      user,
     });
   } catch (error) {
     res.status(500).json({ error: "Internal server error" });
@@ -39,16 +39,28 @@ module.exports.login = async (req, res) => {
       return res.status(401).json({ error: "Invalid credentials" });
     }
 
-    const passwordMatch = await bcrypt.compare(req.body.password, user.password);
+    const passwordMatch = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
     if (!passwordMatch) {
       return res.status(401).json({ error: "Invalid credentials" });
     }
 
     const token = jwt.sign({ email: user.email }, process.env.secret);
+
+    if (token) {
+      if (token) {
+        localStorage.setItem("token", token);
+      } else {
+        console.error("No token received in login()");
+      }
+    }
+
     res.status(200).json({
       success: true,
       token,
-      user 
+      user,
     });
   } catch (error) {
     res.status(500).json({ error: "Internal server error" });

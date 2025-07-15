@@ -37,13 +37,26 @@ export default function Login() {
     };
     axios
       // .post("https://zerodha-clone-backend-8nlf.onrender.com/user/login", data, {
-      .post("https://zerodha-clone-backend-itcc.onrender.com/user/login", data, {
-        headers: {
-          "Content-Type": "application/json",
+      .post(
+        "https://zerodha-clone-backend-itcc.onrender.com/user/login",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-      })
+      )
       .then(async (res) => {
-        await login(res.data.token);
+        console.log("Token received from backend:", res.data);
+        const token = res.data.token;
+        await login(token);
+
+        if (token) {
+          localStorage.setItem("token", token);
+          console.log("Token saved to localStorage");
+        } else {
+          console.warn("No token in response.");
+        }
       })
       .catch((error) => {
         if (error.response) {
@@ -74,11 +87,41 @@ export default function Login() {
           <Typography component="h1" variant="h5">
             Login
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-            {alert.st == true ? <Alert severity="error">{alert.msg}</Alert> : null}
-            <TextField margin="normal" required fullWidth id="email" label="Email Address" name="email" autoComplete="email" autoFocus />
-            <TextField margin="normal" required fullWidth name="password" label="Password" type="password" id="password" autoComplete="current-password" />
-            <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
+          <Box
+            component="form"
+            onSubmit={handleSubmit}
+            noValidate
+            sx={{ mt: 1 }}
+          >
+            {alert.st == true ? (
+              <Alert severity="error">{alert.msg}</Alert>
+            ) : null}
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="email"
+              label="Email Address"
+              name="email"
+              autoComplete="email"
+              autoFocus
+            />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              autoComplete="current-password"
+            />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >
               Sign In
             </Button>
             <Grid container>
